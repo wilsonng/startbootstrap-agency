@@ -606,3 +606,15 @@ ul.social-buttons {
 	text-align: center;
 	white-space: nowrap;
 }
+
+.poi-1 {
+  background-color: #88bbd6;
+  padding: 5px;
+  color: white;
+}
+
+.poi-2 {
+  background-color: #99d3df;
+  padding: 5px;
+  color: white;
+}
