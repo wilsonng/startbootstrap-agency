@@ -40,16 +40,72 @@
 })(jQuery); // End of use strict
 
 
+var data = [
+    {
+        label: 'Seattle',
+        type: ['work', 'education'],
+        lat: 47.608013,
+        lng: -122.335167
+    },
+    {
+        label: 'Hong Kong',
+        type: ['work', 'education'],
+        lat: 22.344044,
+        lng: 114.100998
+    },
+    {
+        label: 'Shanghai',
+        type: ['work'],
+        lat: 31.217133,
+        lng: 121.551491
+    },
+    {
+        label: 'Barcelona',
+        type: ['education'],
+        lat: 41.390205,
+        lng: 2.154007
+    },
+    {
+        label: 'Bay Area',
+        type: ['education'],
+        lat: 37.368832,
+        lng: -122.036346
+    },
+    {
+        label: 'Chicago',
+        type: ['work'],
+        lat: 41.881832,
+        lng: -87.623177
+    },
+    {
+        label: 'London',
+        type: ['education'],
+        lat: 51.508530,
+        lng: -0.076132
+    }
+];
+
 function initMap() {
-    var uluru = { lat: 15, lng: 0 };
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 2,
-        center: uluru
+        center: { lat: 15, lng: 0 }
     });
-    var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-    });
+
+    for (var i in data) {
+        var item = data[i];
+        var marker = new google.maps.Marker({
+            position: { lat: item.lat, lng: item.lng },
+            map: map,
+            icon: {
+                path: 'M0-48c-9.8 0-17.7 7.8-17.7 17.4 0 15.5 17.7 30.6 17.7 30.6s17.7-15.4 17.7-30.6c0-9.6-7.9-17.4-17.7-17.4z',
+                fillColor: '#00CCBB',
+                fillOpacity: 1,
+                strokeColor: '',
+                strokeWeight: 0
+            },
+            map_icon_label: '<span class="map-icon map-icon-point-of-interest"></span>'
+        });
+    }
 }
 
 initMap();
