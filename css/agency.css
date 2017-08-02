@@ -592,3 +592,11 @@ ul.social-buttons {
   .btn-xl .badge {
     color: #fed136;
     background-color: white; }
+
+
+#map {
+   height: 600px;
+   width: 100%;
+
+
+}
