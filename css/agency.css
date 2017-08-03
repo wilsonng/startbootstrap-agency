@@ -3,6 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
  */
+/*$theme-primary:    #D9B310;*/
 body {
   overflow-x: hidden;
   font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -610,11 +611,13 @@ ul.social-buttons {
   white-space: nowrap; }
 
 .poi-1 {
-  background-color: #88bbd6;
+  /*background-color: #88bbd6;*/
+  background-color: #0B3C5D;
   padding: 5px;
   color: white; }
 
 .poi-2 {
-  background-color: #99d3df;
+  /*background-color: #99d3df;*/
+  background-color: #328CC1;
   padding: 5px;
   color: white; }

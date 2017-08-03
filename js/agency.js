@@ -100,8 +100,28 @@ var data1 = [
         lat: 34.341574, lng: 108.939770
     },
     {
-        label: 'Xihang', type: ['travel'],
+        label: 'Xining', type: ['travel'],
         lat: 34.351879, lng: 108.968354
+    },
+    {
+        label: 'Dalian', type: ['travel'],
+        lat: 38.914003, lng: 121.614682
+    },
+    {
+        label: 'Suzhou', type: ['travel'],
+        lat: 31.298974, lng: 120.585289
+    },
+    /*{
+        label: 'Guangzhou', type: ['travel'],
+        lat: 23.129110, lng: 113.264385
+    },*/
+    {
+        label: 'Vancouver', type: ['travel'],
+        lat: 49.282729, lng: -123.120738
+    },
+    {
+        label: 'Toronto', type: ['travel'],
+        lat: 43.653226, lng: -79.383184
     },
     {
         label: 'Ningbo', type: ['travel'],
@@ -118,7 +138,75 @@ var data1 = [
     {
         label: 'Brighton', type: ['travel'],
         lat: 43.122272, lng: -77.573405
-    }
+    },
+    {
+        label: 'San Sebastian', type: ['travel'],
+        lat: 43.318334, lng: -1.981231
+    },
+    {
+        label: 'Porto', type: ['travel'],
+        lat: 41.157944, lng: -8.629105
+    },
+    {
+        label: 'Lisbon', type: ['travel'],
+        lat: 38.722252, lng: -9.139337
+    },
+    {
+        label: 'Venice', type: ['travel'],
+        lat: 45.440847, lng: 12.315515
+    },
+    {
+        label: 'Rome', type: ['travel'],
+        lat: 41.902783, lng: 12.496366
+    },
+    {
+        label: 'Paris', type: ['travel'],
+        lat: 48.856614, lng: 2.352222
+    },
+    {
+        label: 'Paris', type: ['travel'],
+        lat: 48.856614, lng: 2.352222
+    },
+    {
+        label: 'Reykjavik', type: ['travel'],
+        lat: 64.126521, lng: -21.817439
+    },
+    {
+        label: 'Paris', type: ['travel'],
+        lat: 48.856614, lng: 2.352222
+    },
+    {
+        label: 'Istanbul', type: ['travel'],
+        lat: 41.008238, lng: 28.978359
+    },
+    {
+        label: 'Athens', type: ['travel'],
+        lat: 37.983810, lng: 23.727539
+    },
+    {
+        label: 'Amsterdam', type: ['travel'],
+        lat: 52.370216, lng: 4.895168
+    },
+    {
+        label: 'New York', type: ['travel'],
+        lat: 40.712784, lng: -74.005941
+    },
+    {
+        label: 'Las Vegas', type: ['travel'],
+        lat: 36.169941, lng: -115.139830
+    },
+    {
+        label: 'Los Angeles', type: ['travel'],
+        lat: 34.052234, lng: -118.243685
+    },
+    {
+        label: 'Amsterdam', type: ['travel'],
+        lat: 52.370216, lng: 4.895168
+    },
+    {
+        label: 'Portland', type: ['travel'],
+        lat: 45.523062, lng: -122.676482
+    },
 ];
 
 var styledMapType = new google.maps.StyledMapType(
@@ -497,7 +585,8 @@ function initMap() {
 
         var markerIcon = {
             path: 'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5z',
-            fillColor: '#99d3df',
+            //fillColor: '#99d3df',
+            fillColor: '#0B3C5D',
             fillOpacity: 1,
             anchor: new google.maps.Point(12, 23),
             scale: 0.8,
@@ -518,7 +607,7 @@ function initMap() {
 
         var markerIcon = {
             path: 'M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5z',
-            fillColor: '#88bbd6',
+            fillColor: '#328CC1',
             fillOpacity: 1,
             anchor: new google.maps.Point(12, 23),
             scale: 1.5,
