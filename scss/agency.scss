@@ -14,3 +14,31 @@
 @import "footer.scss";
 // Bootstrap Overrides
 @import "bootstrap-overrides.scss";
+
+
+
+
+#map {
+   height: 600px;
+   width: 100%;
+}
+
+.map-icon-label .map-icon {
+	font-size: 24px;
+  color: #FFFFFF;
+  line-height: 48px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.poi-1 {
+  background-color: #88bbd6;
+  padding: 5px;
+  color: white;
+}
+
+.poi-2 {
+  background-color: #99d3df;
+  padding: 5px;
+  color: white;
+}
